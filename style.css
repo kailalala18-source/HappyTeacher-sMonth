@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body {
+font-family: "Segoe UI", Arial, sans-serif;
+
+background:
+    radial-gradient(circle at top left, #fff6d9, transparent 35%),
+    radial-gradient(circle at bottom right, #ffd6e7, transparent 40%),
+    linear-gradient(135deg, #fffaf0, #ffe8ef, #fff4d6);
+color: #654f55;
+text-align: center;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 30px;
+
+}
+
+
+.decor {
+position: fixed;
+font-size: 30px;
+animation: float 4s ease-in-out infinite;
+pointer-events: none;
+}
+
+.decor1 {
+top: 10%;
+left: 8%;
+}
+
+.decor2 {
+top: 18%;
+right: 10%;
+animation-delay: 1s;
+}
+
+.decor3 {
+bottom: 15%;
+left: 12%;
+animation-delay: 2s;
+}
+
+.decor4 {
+bottom: 10%;
+right: 12%;
+animation-delay: 3s;
+}
+
+
+.container {
+width: 90%;
+max-width: 720px;
+
+padding: 45px 40px;
+background: rgba(255, 255, 255, 0.90);
+border: 2px solid #f8c8d8;
+border-radius: 30px;
+box-shadow:
+    0 15px 40px rgba(180, 120, 140, 0.20);
+backdrop-filter: blur(5px);
+animation: containerAppear 1s ease;
+
+}
+
+
+
+.top-icon {
+font-size: 42px;
+margin-bottom: 10px;
+
+animation: bounce 2s infinite;
+
+}
+
+
+h1 {
+color: #c75b83;
+
+font-size: 42px;
+margin-bottom: 12px;
+letter-spacing: 1px;
+text-shadow: 2px 2px 0 #ffe0ea;
+
+}
+
+
+
+.subtitle {
+color: #80666d;
+
+font-size: 18px;
+margin-bottom: 30px;
+
+}
+
+
+button {
+background: linear-gradient(
+135deg,
+#d96b96,
+#bd507c
+);
+
+color: white;
+border: none;
+border-radius: 30px;
+padding: 15px 30px;
+font-size: 17px;
+font-weight: bold;
+cursor: pointer;
+box-shadow:
+    0 7px 15px rgba(189, 80, 124, 0.25);
+transition: all 0.3s ease;
+
+}
+
+button:hover {
+transform: translateY(-3px) scale(1.04);
+
+box-shadow:
+    0 10px 20px rgba(189, 80, 124, 0.35);
+
+}
+
+button:active {
+transform: scale(0.97);
+}
+
+
+.tribute {
+display: none;
+
+margin-top: 35px;
+padding: 30px 25px;
+background: linear-gradient(
+    135deg,
+    #fff7fa,
+    #fffdf4
+);
+border: 1px solid #f5c7d6;
+border-radius: 25px;
+animation: fadeIn 1s ease;
+
+}
+
+
+.teacher-img {
+width: 150px;
+height: 100px;
+
+object-fit: cover;
+border-radius: 50%;
+border: 7px solid #f3b4c9;
+padding: 4px;
+background: white;
+box-shadow:
+    0 8px 20px rgba(190, 100, 130, 0.20);
+margin-bottom: 20px;
+transition: transform 0.3s ease;
+
+}
+.cute{
+    height: 200px;
+    width: 200px;
+}
+
+.teacher-img:hover {
+transform: scale(1.05);
+}
+
+
+h2 {
+color: #c75b83;
+
+font-size: 27px;
+margin-bottom: 15px;
+
+}
+
+
+.message {
+color: #66565b;
+
+font-size: 17px;
+line-height: 1.8;
+margin-bottom: 25px;
+
+}
+
+
+
+h3 {
+color: #b45c7c;
+
+margin-top: 25px;
+margin-bottom: 15px;
+font-size: 20px;
+
+}
+
+
+
+.music-box {
+background: linear-gradient(
+135deg,
+#fce2eb,
+#fff1d6
+);
+
+border: 1px solid #f2c1d1;
+border-radius: 20px;
+padding: 20px;
+box-shadow:
+    0 5px 15px rgba(190, 100, 130, 0.12);
+
+}
+
+
+.music-title {
+color: #bd507c;
+
+font-size: 21px;
+font-weight: bold;
+margin-bottom: 5px;
+
+}
+
+
+.artist {
+color: #80666d;
+
+font-size: 15px;
+margin-bottom: 15px;
+
+}
+
+
+audio {
+width: 100%;
+
+height: 45px;
+margin-top: 5px;
+
+}
+
+
+
+
+.song-text {
+color: #806d73;
+
+font-size: 14px;
+line-height: 1.6;
+margin-top: 18px;
+
+}
+
+
+@keyframes fadeIn {
+
+from {
+    opacity: 0;
+    transform: translateY(25px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+}
+
+@keyframes containerAppear {
+
+from {
+    opacity: 0;
+    transform: scale(0.95);
+}
+to {
+    opacity: 1;
+    transform: scale(1);
+}
+
+}
+
+@keyframes float {
+
+0% {
+    transform: translateY(0);
+}
+50% {
+    transform: translateY(-15px);
+}
+100% {
+    transform: translateY(0);
+}
+
+}
+
+@keyframes bounce {
+
+0%, 100% {
+    transform: translateY(0);
+}
+50% {
+    transform: translateY(-8px);
+}
+
+}
+
+
+@media (max-width: 600px) {
+
+body {
+    padding: 15px;
+}
+.container {
+    width: 100%;
+    padding: 30px 20px;
+}
+h1 {
+    font-size: 30px;
+}
+.subtitle {
+    font-size: 16px;
+}
+.teacher-img {
+    width: 180px;
+    height: 180px;
+}
+h2 {
+    font-size: 23px;
+}
+.message {
+    font-size: 15px;
+}
+.decor {
+    font-size: 22px;
+}
+
+}
